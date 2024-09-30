@@ -1,0 +1,102 @@
+html,body{width: 100%;height: 100%;}
+body{margin:0;padding:0;font-family:"Microsoft YaHei","Open Sans",Arial,"Hiragino Sans GB","STHeiti","WenQuanYi Micro Hei",SimSun,sans-serif;background-color:#fff;/*background-image: url(https://clashbk.github.io/wp-content/themes/modown/static/img/login-bg.png);*/background-size: cover;color:rgba(0,0,0,0.8);font-size:100%;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;line-height:1.5;word-wrap:break-word}
+a{text-decoration: none}
+button,input{font-family:"Microsoft YaHei","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif}
+input[type="submit"],input[type="reset"],input[type="button"],button {-webkit-appearance: none;}
+:focus{outline:0}
+*{box-sizing: border-box;}
+::-webkit-input-placeholder{color:rgba(0,0,0,.6)}::-moz-placeholder{color:rgba(0,0,0,.6)}:-ms-input-placeholder{color:rgba(0,0,0,.6)}
+.loginbox{position:relative;background: #fff;width: 460px;margin:0 auto;border-radius: 20px;padding:40px 0 60px;text-align: center;top: 50%;transform: translateY(-50%);box-shadow: 0px 0px 20px rgb(0 0 0 / 8%);}
+.loginbox.has-left{width: 760px;padding-left: 300px;}
+.loginbox.has-left .loginimage{position: absolute;left: 0;top: 0;bottom: 0;width: 300px;border-radius: 20px 0 0 20px;overflow: hidden;}
+.loginbox.has-left .loginimage img{width: 100%;height: 100%;object-fit: cover;}
+.loginbox .part{max-width: 320px;width:100%;display: inline-block;}
+.loginbox h2{font-size:28px;text-align:center;margin:20px auto;}
+.loginbox h2 img{width:80px;height:auto;border:none;border-radius: 50%;}
+.loginbox p{margin:0;}
+.loginbox .input-item{margin-bottom:10px; position: relative;font-size: 13px;}
+.loginbox .input-item .icon{position: absolute;left: 10px;top:10.5px;}
+.loginbox .input-submit{margin-bottom:6px;}
+.loginbox .input-submit .submit{font-size:14px;background:var(--theme-color);color:#fff;width:100%;border:none;border-radius:7px;padding:12px 0;cursor:pointer}
+.loginbox .input-submit .submit:hover{opacity: .8}
+.loginbox .input-item .input-control{padding:13px 12px 13px 33px;border:none;width:100%;border:1px solid #eaeaea;border-radius:7px;}
+.loginbox .input-item .captcha-img{top:-9.5px;right:-13px;cursor: pointer;height: 38px;position: relative;}
+.loginbox .input-item .captcha-clk, .loginbox .input-item .captcha-clk2, .loginbox .input-item .captcha-sms-clk{position:absolute;cursor:pointer;font-size:13px;color:var(--theme-color);display:inline-block;top:13px;right:15px;cursor: pointer;}
+.loginbox .input-item .captcha-clk.disabled, .loginbox .input-item .captcha-sms-clk.disabled{cursor:auto;opacity: .7;}
+.loginbox .input-item .invitation-link{position:absolute;top:14px;right:10px;font-size:13px;color:#999}
+.loginbox .safe{margin-bottom:30px;margin-top:15px;overflow:hidden;text-align: left;}
+.loginbox .signup-social-only .safe{margin-bottom: 0;}
+.loginbox .safe a{font-size:13px;color: #999;float: left;}
+.loginbox .safe .signup-loader, .loginbox .safe .signsms-loader{float:right}
+.loginbox .sign-tips2, .loginbox .sign-tip{font-size:8px;color:#f42;margin-bottom:10px;margin-top: -4px;display:none}
+.loginbox .mpPart .sign-tips2{text-align: center;margin-top: 5px;}
+.loginbox .sign-tips2 a{display: none;}
+.loginbox .regSuccess{font-size:14px;text-align:center;margin-top:90px;}
+.loginbox .social-login{text-align:center;font-size: 13px;}
+.loginbox .signup-social-only .sign-social{margin-bottom: 50px;}
+.loginbox .social-login .social-title{margin-bottom: 20px;}
+.loginbox .social-login span{color:#aaa;position: relative;}
+.loginbox .social-login span:before{top: 9px;left: -105px;}
+.loginbox .social-login span:after{top: 9px;right: -105px;}
+.loginbox .social-login span:before, .loginbox .social-login span:after{position: absolute;content: '';border-bottom: rgba(0,0,0,0.06) 1px solid;box-shadow: 0 1px rgba(255,255,255,0.5);width: 90px;}
+.sign-social .login-qq,.sign-social .login-weibo,.sign-social .login-weixin,.sign-social .login-google,.sign-social .login-facebook,.sign-social .login-twitter{opacity:0.85;filter:alpha(opacity=85);color:#fff;font-size:28px;text-align:center;width:50px;height:50px;line-height:50px;border-radius:50%;text-align:center;margin:0 8px;display: inline-block;}
+.loginbox .signup-social-only .sign-social .login-qq, .loginbox .signup-social-only .sign-social .login-weibo, .loginbox .signup-social-only .sign-social .login-weixin, .loginbox .signup-social-only .sign-social .login-google, .loginbox .signup-social-only .sign-social .login-facebook, .sign-social .login-twitter{width: 60px;height: 60px;line-height: 60px;}
+.sign-social .login-qq{background-color:#3F92D6;}
+.sign-social .login-weibo{background-color:#FF766C;}
+.sign-social .login-weixin{background-color:#40C34A}
+.sign-social .login-google{background-color:#ea4335}
+.sign-social .login-facebook{background-color:#1877F2}
+.sign-social .login-twitter{background-color:#4ab3f4}
+.sign-social .login-qq:hover,.sign-social .login-weibo:hover,.sign-social .login-weixin:hover,.sign-social .login-google:hover,.sign-social .login-facebook:hover,.sign-social .login-twitter:hover{color:#fff;opacity:1;filter:alpha(opacity=100)}
+.sign-social .icon{font-size: 28px;top:0;}
+.loginbox .signup-social-only .sign-social .icon{font-size: 28px;}
+.form-policy{margin-top: 5px;font-size: 12px;color:#999;text-align: left;}
+.form-policy input{position: relative;top:2px;margin:0;}
+.form-policy a{color: #1a1a1a}
+.left{float:left;}
+.right{float:right;}
+.erphp-weixin-scan{text-align: center;z-index: 99}
+.erphp-weixin-scan img{margin:10px 0;border-radius: 3px;}
+.loginform .payment-radios{text-align: center;}
+.loginform .payment-radios .paytype{display: none;}
+.loginform .payment-radios .icon{top:2px;left: 0;font-size:32px;position: relative;}
+.loginform .payment-radios label{margin: 0 5px;cursor: pointer;display: inline-block;line-height: 1;width:44px;height: 44px;border:2px solid #eaeaea;border-radius:50%;text-align: center;padding:2px;}
+.loginform .payment-radios .payment-alipay-label .icon{color:#00a3ee;}
+.loginform .payment-radios .payment-wxpay-label .icon{color:#00c250;}
+.loginform .payment-radios .payment-qqpay-label .icon{color:#0BB2FF;}
+.loginform .payment-radios .payment-paypal-label .icon{color:#0070ba;}
+.loginform .payment-radios .paytype:checked + label{border:2px solid var(--theme-color);}
+.loginform .payment-radios .paytype:checked + .payment-alipay-label{border:2px solid #00a3ee;}
+.loginform .payment-radios .paytype:checked + .payment-wxpay-label{border:2px solid #00c250;}
+.loginform .payment-radios .paytype:checked + .payment-qqpay-label{border:2px solid #0BB2FF;}
+.loginform .payment-radios .paytype:checked + .payment-paypal-label{border:2px solid #0070ba;}
+.loginform .payment-radios label:last-child{margin-right: 0}
+
+.expend-container{position: absolute;right: 0;top: 0;cursor: pointer;z-index: 1;}
+.expend-container:after{content: ' ';position: absolute;right: 1.2rem;top: 1.2rem;z-index: 2;border-top: 1px rgba(0, 0, 0, 0.2) solid;height: 6rem;width: 6rem;background: #fff;transform: rotate(45deg);transition: all 0.4s;}
+.expend-container:hover:after{right: 1.4rem;top: 1.4rem;}
+.expend-container a{display: inline-block;}
+.expend-container svg{fill: #999}
+
+.return-home{position: fixed;top: 20px;left: 20px;text-align: center;background: #f5f5f5;width: 65px;height: 65px;line-height: 65px;border-radius: 12px;display: inline-block;color: #999;}
+.return-home .icon{font-size: 28px;}
+
+body.night{background-color: #232323 !important;color: #777;}
+body.night .loginbox{background: #232323;box-shadow: 0 0 20px rgba(0,0,0,.3);}
+body.night .loginbox .input-item .input-control{background: #303030;border-color:#303030;color:#777;}
+body.night ::-webkit-input-placeholder{color:#777}body.night ::-moz-placeholder{color:#777}body.night :-ms-input-placeholder{color:#777}
+body.night .loginbox .safe a{color:#999;}
+body.night .loginbox .social-login span{color: #777;}
+body.night .expend-container:after{background: #232323}
+body.night .form-policy{color: #777;}
+body.night .form-policy a{color:#999;}
+body.night .return-home{background: #303030;color: #777;}
+
+@media (max-width: 768px){
+	.loginbox.has-left{width: 100%;padding-left: 0;}
+	.loginbox.has-left .loginimage{display: none;}
+}
+
+@media (max-width: 640px){
+	.loginbox{width: 100%;border-radius: 0;box-shadow: none !important;}
+}
